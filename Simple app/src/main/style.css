@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: #125;
+}
+.welcome-title {
+    color: aliceblue;
+    font-size: 5vh;
+    text-align: center;
+    user-select: none;
+    margin: 10px;
+    border-bottom: 5px solid #111;
+    padding-bottom: 20px;
+}
+.logo {
+    width: 10%;
+    position: absolute;
+    top: -7px;
+    left: 20px;
+    border-radius: 40px;
+    border: 2px solid red;
+    height: 10vh;
+}
+.main-logo {
+    position: absolute;
+    left: 15%;
+    top: 20%;
+    
+}
+.header{
+    height: 50px;
+    border-bottom: 5px solid #1f32db;
+    box-shadow: 0 0 10px 20px red;
+    display: grid;
+    grid-template-columns: 18% 15% 15% 15% 20% 16.5% 20%;
+    background-color: rgb(236, 235, 235);
+}
+#iframe {
+    width: 98.5%;
+    margin-left: 5px;
+    margin-top: 5px;
+    border: none;
+    height: 90vh;
+    background-color: white;
+}
+#container {
+    display: none;
+}
+.welcome-page {
+    height: 97.5vh;
+    position: relative;
+    width: 100%;
+}
+
+.anima {
+    height: 50px;
+    width: 0%;
+    border: 5px solid greenyellow;
+    border-radius: 25px;
+     margin-top: 20px;
+     background-color: transparent;
+     line-height: 10px;
+     color: gold;
+     font-size: 10px;
+     transition: width 1s;
+    
+    width: 100%;
+}
+
+button{
+    border: none;
+    border-radius: 10px;
+}
+button:hover{
+    border: 1px solid rgb(1, 64, 255);
+    cursor: pointer;
+}
+.loading {
+    height: 4em;
+    width: 4em;
+    border: 10px dotted red;
+    border-radius: 25px;
+    position: absolute;
+    top: 75%;
+    left: 45%;
+    animation: loading 1s 8;
+}
+@keyframes loading {
+    100%{
+        transform: rotate(360deg);
+        
+    }
+}
+.active {
+    background-color: blue;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
